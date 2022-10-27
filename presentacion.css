@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+}
+.header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.content {
+    max-width: 40rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+.header-video {
+    position: fixed;
+    top: 50%; left: 50%;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    /* width: 500px;
+    height: 500px; */
+    transform: translate(-50%, -50%);
+    
+}
+.header-video video {
+    width: 100%;
+    height: 100%;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #01154639;
+    z-index: 1;
+    opacity: .85;
+}
+.header-content {
+    z-index: 2;
+}
+.header-content h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+    font-family: 'Lobster', cursive;
+}
+.header-content p {
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 2rem;
+}
+
+
+/* Boton de inicio */
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn:hover{
+    background: #c44569;
+    transition-delay: 1s;
+}
+.btn span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#c44569)
+}
+.btn:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#c44569)
+}
+.btn:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay:0.5s ;
+}
+
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#c44569)
+}
+.btn:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay:0.25s ;
+}
+
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#c44569)
+}
+.btn:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay:0.75s ;
+}
+/* Boton de inicio */

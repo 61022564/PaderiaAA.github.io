@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #001824;
+  font-family: sans-serif;
+}
+/*---------------Menu------------*/
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 63px;
+  background: #cbb26a;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  border: 1px solid #ffffff;
+}
+
+.navbar {
+  display: flex;
+  margin-right: 10px;
+}
+.navbar a {
+  display: block;
+  padding: 20px 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background: #2d2d2d81;
+}
+
+.navbar a {
+  display: block;
+  padding: 20px 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+#pie {
+  border: 0px solid #000;
+  width: 100%;
+  height: 50px;
+  background: #000;
+  margin-top: 0px;
+  color: white;
+}
+#pie #centro-pie {
+  width: 1000px;
+  /* height: auto; overflow: hidden; */
+  margin: auto;
+}
+
+/* --------pagina de nosotros----------------- */
+
+#centro3 {
+  width: 800px;
+  margin: auto;
+  border: 0px solid;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.encabezados {
+  font-family: "Arial black";
+  font-size: 30px;
+  box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.692);
+}
+
+.t1 {
+  color: #cbb26a;
+}
+
+.descripcion-pagina {
+  color: #ffffff;
+  font-size: 20px;
+}
+/*-------pagina de contacto------*/
+
+#izquierda {
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  border: 0px solid;
+  float: left;
+}
+
+.texto-contacto {
+  text-align: left;
+}
+
+#derecha {
+  width: 490px;
+  border: 0px solid;
+  height: auto;
+  overflow: hidden;
+  float: right;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+textarea {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.nombre-mensaje {
+  width: 95%;
+}
+
+.email-asunto {
+  width: 45%;
+}
+#map_1 {
+  height: 450px;
+  width: 90%;
+  border-radius: 5px;
+  padding: 10px;
+}
+.boton {
+  background-color: #cbb26a;
+  color: rgb(0, 0, 0);
+  border-color: 5px #cbb26a;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+.boton:hover {
+  background-color: black;
+  color: #cbb26a;
+  border-color: #cbb26a;
+}
+
+@media (min-width: 750px) {
+  body {
+    text-align: left;
+  }
+}
+@media (min-width: 750px) {
+	.icono {
+	  margin-bottom: 0;
+	}
+  }
+  @media (min-width: 550px) {
+	.card {
+	  text-align: left;
+	}
+  }
